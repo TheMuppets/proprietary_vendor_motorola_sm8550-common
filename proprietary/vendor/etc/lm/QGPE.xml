@@ -36,6 +36,8 @@
         <GROUP_DOWNMIGRATE_PATH>/proc/sys/walt/sched_group_downmigrate</GROUP_DOWNMIGRATE_PATH>
         <BIG_CLUSTER_ID>4,5,6,7</BIG_CLUSTER_ID>
         <QSPM_EXCLUSIIVE>0</QSPM_EXCLUSIIVE>
+        <THERMAL_ATA_LEVEL_THRESHOLDS>-1, -1, -1</THERMAL_ATA_LEVEL_THRESHOLDS>
+        <THERMAL_ATA_SKIN_THRESHOLD>51</THERMAL_ATA_SKIN_THRESHOLD>
     </Configs>
     <Profiles>
         <Profile>
@@ -91,6 +93,16 @@
             <PREDICTIVE_PROFILE4>
                 0x43488000,2092000
             </PREDICTIVE_PROFILE4>
+            <!-- MAX_FREQ_CLUSTER_BIG_CORE_0, value-->
+            <THERMAL_PROFILE0>
+                0x40804000, 2227
+            </THERMAL_PROFILE0>
+            <!-- MAX_FREQ_CLUSTER_BIG_CORE_0, value-->
+            <!-- LLCC_DDR_BW_MAX_FREQ_V2, value-->
+            <THERMAL_PROFILE1>
+                0x40804000, 2227,
+                0x43040000, 2000000
+            </THERMAL_PROFILE1>
         </Profile>
     </Profiles>
 

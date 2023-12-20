@@ -495,9 +495,27 @@ dex_import {
 }
 
 prebuilt_etc_xml {
+	name: "android.hardware.drm-service",
+	owner: "motorola",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.drm-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "android.hardware.gnss-aidl-service-qti",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.keymaster@4.0-service-strongbox-qti",
+	owner: "motorola",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.keymaster@4.0-service-strongbox-qti.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -615,6 +633,15 @@ prebuilt_etc_xml {
 	name: "deviceinfo-saidl",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/deviceinfo-saidl.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "imsdcservice-saidl",
+	owner: "motorola",
+	src: "proprietary/vendor/etc/vintf/manifest/imsdcservice-saidl.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,

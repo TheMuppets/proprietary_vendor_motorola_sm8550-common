@@ -1,5 +1,5 @@
 ##############################################################################
-# Copyright (c) 2022 Qualcomm Technologies, Inc.
+# Copyright (c) 2022-2023 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 ##############################################################################
@@ -73,6 +73,8 @@ sensor_orientation = 1 2 3
 #tracking_camera_supported_formats        = y8
 #tracking_camera_default_frame_format     = y8
 
+# Can deprecate this camera config if host smartViewer protocol version >= 2.0.3
+# and viewer smartViewer protocol version >= 2.0.2
 # uvc-tracking camera properties
 uvc-tracking_camera_id                  = 1
 uvc-tracking_camera_sensor              = v4l_ov9282_stereo
@@ -101,8 +103,8 @@ uvc-tracking_camera_default_frame_format     = y8
 wireless-tracking_camera_id                  = 1
 wireless-tracking_camera_sensor              = wl_ov9282_stereo
 wireless-tracking_camera_driver              = wireless
-wireless-tracking_camera_res                 = 1280 400
-wireless-tracking_camera_quarter_res         = 1280 400
+wireless-tracking_camera_res                 = 1280 400 30 30
+wireless-tracking_camera_quarter_res         = 1280 400 30 30
 wireless-tracking_camera_frame_rdi_mode      = false
 wireless-tracking_camera_frame_rdi_bit_depth = 10
 wireless-tracking_camera_rdi_frame_format    = raw10
@@ -150,8 +152,8 @@ uvc-rgb-left_camera_default_frame_format       = yuv420
 wireless-rgb-left_camera_id                      = 2
 wireless-rgb-left_camera_sensor                  = wl_ov8856
 wireless-rgb-left_camera_driver                  = wireless
-wireless-rgb-left_camera_res                     = 1280 720
-wireless-rgb-left_camera_quarter_res             = 1280 720
+wireless-rgb-left_camera_res                     = 1280 720 30 30
+wireless-rgb-left_camera_quarter_res             = 1280 720 30 30
 wireless-rgb-left_camera_frame_rdi_mode          = false
 wireless-rgb-left_camera_frame_rdi_bit_depth     = 10
 wireless-rgb-left_camera_rdi_frame_format        = raw10
@@ -373,8 +375,46 @@ translation_f1 = 1.021
 # Preferred 3DR frame rate.  System load/performance may limit frame rate.
 3dr_depth_fps = 10
 
-#Add the following value to config QVR waiting time for data when taking pickture or switching resolutions.
-camera_v4l2_timeout_ms = 1500
-
 # Remote device parameters
 #remote_device_interface_name = wlan2
+
+# WLAN link parameters
+# Enable dynamic wi-fi link settings
+#   Type: bool
+#   Suggested Value: 0 and 1
+wlan_enable_dynamic_link_settings = 1
+
+# Wpa client control interface path
+#   Type: string
+# Actual path /data/vendor/wifi/hostapd/ctrl/<network-interface-name>
+wlan_wpacli_ctrl_interface_path = /data/vendor/wifi/hostapd/ctrl
+
+# WLAN XR latency mode
+#   Type: unsigned int
+wlan_xr_latency_mode = 2
+
+# WLAN original latency mode
+#   Type: unsigned int
+wlan_normal_latency_mode = 1
+
+# Enable TSF
+#   Type: bool
+#   Suggested Value: 0 and 1
+wlan_enable_tsf = 0
+
+# If TSF is enabled, set latency interval
+#   Type: unsigned int
+wlan_tsf_latency_interval = 3000
+
+# Set ratemask
+#   Type: string
+wlan_set_ratemask = 0x0007C01F
+
+# Original link ratemask
+#   Type: string
+wlan_original_ratemask = 0xFFFFFFFF
+
+# WLAN unit test target node
+#   Type: string
+# Actual path /sys/class/net/<network-interface-name>/unit_test_target
+wlan_unit_test_target_node = /sys/class/net

@@ -102,3 +102,5 @@ restart_syscall: 1
 mkdirat: 1
 statfs: 1
 fsync: 1
+fchmodat: 1
+fchownat: 1

@@ -13,8 +13,8 @@ if [ "$soc_id" -eq 339 ] || [ "$soc_id" -eq 356 ] || [ "$soc_id" -eq 361 ] || [ 
     start vendor.keymaster-sb-4-0
     enable vendor.authsecret.qti-1-0
     start vendor.authsecret.qti-1-0
-#soc_ids SM8450: 457, 482, SM8550: 519, 536, 600, 601
-elif [ "$soc_id" -eq 457 ] || [ "$soc_id" -eq 482 ] || [ "$soc_id" -eq 519 ] || [ "$soc_id" -eq 536 ] || [ "$soc_id" -eq 600 ] || [ "$soc_id" -eq 601 ]; then
+#soc_ids SM8450: 457, 482, SM8550: 519, 536, 600, 601, 603, 604
+elif [ "$soc_id" -eq 457 ] || [ "$soc_id" -eq 482 ] || [ "$soc_id" -eq 519 ] || [ "$soc_id" -eq 536 ] || [ "$soc_id" -eq 600 ] || [ "$soc_id" -eq 601 ] || [ "$soc_id" -eq 603 ] || [ "$soc_id" -eq 604 ]; then
     enable vendor.keymaster-sb-4-0
     start vendor.keymaster-sb-4-0
 else

@@ -49,9 +49,9 @@ ________________________________________________________________________________
                 <Prop Name="vendor.debug.enable.memperfd"         Value="true"     />
                 <Prop Name="vendor.enable.memperfd_MIN_RAM_in_KB" Value="1048576"  />
                 <Prop Name="vendor.enable.memperfd_MAX_RAM_in_KB" Value="12582912" />
-                <Prop Name="ro.vendor.perf.ss" Value="false" Target="kalama"/>
-                <Prop Name="ro.vendor.perf.lal" Value="false" Target="kalama"/>
-                <Prop Name="ro.vendor.perf.lgl" Value="false" Target="kalama" SkewType="10"/>
+                <Prop Name="ro.vendor.perf.ss" Value="true" Target="kalama"/>
+                <Prop Name="ro.vendor.perf.lal" Value="true" Target="kalama"/>
+                <Prop Name="ro.vendor.perf.lgl" Value="true" Target="kalama" SkewType="10"/>
 
                 <!--System Properties -->
                 <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />
@@ -70,7 +70,7 @@ ________________________________________________________________________________
                 <Prop Name="ro.lmk.enable_preferred_apps" Value="true" />
                 <Prop Name="vendor.appcompact.enable_app_compact" Value="true" />
                 <Prop Name="vendor.appcompact.full_compact_type" Value="2" />
-                <Prop Name="vendor.appcompact.some_compact_type" Value="2" />
+                <Prop Name="vendor.appcompact.some_compact_type" Value="4" />
                 <Prop Name="vendor.appcompact.compact_throttle_somesome" Value="5000" />
                 <Prop Name="vendor.appcompact.compact_throttle_somefull" Value="10000" />
                 <Prop Name="vendor.appcompact.compact_throttle_fullsome" Value="500" />

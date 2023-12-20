@@ -12,8 +12,6 @@
             "enc_csc_custom_matrix": false,
             // encoder csc enable
             "enc_csc_enable": false,
-            // early notify alignment size
-            "private_early_notify_alignment_size": 0,
             // this will enable carveout memory for secure encoder bitstream
             "hw_protected_carveout": false
         },
@@ -97,24 +95,12 @@
                 "codec_name": "c2.qti.filter.imagetransform",
                 "lib_name": "libqcodec2_imgtxrfilter.so",
                 "input_streams": [0],
-                "output_streams": [0, 1]
+                "output_streams": [0]
             },
             {
                 "codec_name": "c2.qti.filter.cvp",
                 "lib_name": "libqcodec2_cvpfilter.so",
                 "input_streams": [0],
-                "output_streams": [0]
-            },
-            {
-                "codec_name": "c2.qti.filter.saliencymap",
-                "lib_name": "libqcodec2_salmapfilter.so",
-                "input_streams": [1],
-                "output_streams": [1]
-            },
-            {
-                "codec_name": "c2.qti.filter.streamintegrator",
-                "lib_name": "libqcodec2_streaminteg_filter.so",
-                "input_streams": [0, 1],
                 "output_streams": [0]
             }
         ],

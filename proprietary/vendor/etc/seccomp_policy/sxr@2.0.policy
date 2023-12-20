@@ -61,3 +61,9 @@ bind: 1
 sendto: 1
 recvfrom: 1
 pselect6: 1
+getsockname: 1
+listen: 1
+accept4: 1
+sched_setaffinity: 1
+tgkill: 1
+sysinfo: 1

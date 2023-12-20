@@ -97,6 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/motorola/sm8550-common/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/motorola/sm8550-common/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.1.so \
+    vendor/motorola/sm8550-common/proprietary/system_ext/lib64/vendor.qti.qspmhal-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal-V1-ndk.so \
     vendor/motorola/sm8550-common/proprietary/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
@@ -107,12 +108,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/diag-router:$(TARGET_COPY_OUT_VENDOR)/bin/diag-router \
+    vendor/motorola/sm8550-common/proprietary/vendor/bin/dlsc:$(TARGET_COPY_OUT_VENDOR)/bin/dlsc \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/edgnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/edgnss-daemon \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/embmsslServer:$(TARGET_COPY_OUT_VENDOR)/bin/embmsslServer \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/engine-service \
-    vendor/motorola/sm8550-common/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-qti \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
@@ -148,6 +149,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.spu@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.spu@1.1-service \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.spu@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.spu@2.0-service \
+    vendor/motorola/sm8550-common/proprietary/vendor/bin/ims-dataservice-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims-dataservice-daemon \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
@@ -203,6 +205,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/thermal-engine-v2:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine-v2 \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/motorola/sm8550-common/proprietary/vendor/bin/tlpd:$(TARGET_COPY_OUT_VENDOR)/bin/tlpd \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/vendor.qti.hardware.soter@1.0-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter@1.0-provision \
     vendor/motorola/sm8550-common/proprietary/vendor/bin/vendor.qti.qspmhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qspmhal@1.0-service \
@@ -258,6 +261,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/display/DPU820.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU820.xml \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
+    vendor/motorola/sm8550-common/proprietary/vendor/etc/display/DPU960.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU960.xml \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
@@ -279,7 +283,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
+    vendor/motorola/sm8550-common/proprietary/vendor/etc/init/dlsc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dlsc.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
+    vendor/motorola/sm8550-common/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
@@ -314,6 +320,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/sxrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sxrd.rc \
+    vendor/motorola/sm8550-common/proprietary/vendor/etc/init/tlpd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tlpd.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/init/vendor.dolby.media.c2.dv@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2.dv@1.0-service.rc \
@@ -372,6 +379,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
+    vendor/motorola/sm8550-common/proprietary/vendor/etc/perf/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/powerhint.xml \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/perf/targetavcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetavcsysnodesconfigs.xml \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
@@ -430,6 +438,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/qcril_database/upgrade/ecc/41_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/41_version_qcrildb.sql \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/qcril_database/upgrade/ecc/42_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/42_version_qcrildb.sql \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/qcril_database/upgrade/ecc/43_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/43_version_qcrildb.sql \
+    vendor/motorola/sm8550-common/proprietary/vendor/etc/qcril_database/upgrade/ecc/44_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/44_version_qcrildb.sql \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/qcril_database/upgrade/ecc/4_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/4_version_qcrildb.sql \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/qcril_database/upgrade/ecc/5_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/5_version_qcrildb.sql \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/qcril_database/upgrade/ecc/6_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/6_version_qcrildb.sql \
@@ -452,6 +461,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
+    vendor/motorola/sm8550-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/seccomp_policy/modemManager.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/modemManager.policy \
     vendor/motorola/sm8550-common/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
@@ -517,7 +527,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libar-gpr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libar-gpr.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libaualgo_ainr_component.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaualgo_ainr_component.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib/libaualgo_ainr_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaualgo_ainr_wrapper.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libaualgo_arp_component.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaualgo_arp_component.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib/libaualgo_arp_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaualgo_arp_wrapper.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libaualgo_azp_component.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaualgo_azp_component.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libaualgo_azp_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaualgo_azp_wrapper.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libaualgo_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaualgo_foundation.so \
@@ -541,6 +553,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libeai_fixed_32.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeai_fixed_32.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libext_tflite_c.so:$(TARGET_COPY_OUT_VENDOR)/lib/libext_tflite_c.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libfmpal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfmpal.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib/libgamepoweroptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgamepoweroptfeature.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp_pal.so \
@@ -638,6 +651,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/rfsa/adsp/libhdr_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhdr_skel.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib/rfsa/adsp/libhme_dsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhme_dsp_skel.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/rfsa/adsp/libmctfengine_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmctfengine_skel.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so \
@@ -745,6 +759,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/lib-imscommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscommon.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/lib-imsdcservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdcservice.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/lib-imsrcsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcsservice.so \
@@ -759,7 +774,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libCOSNet_spatial_qnn_quantized.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCOSNet_spatial_qnn_quantized.so \
-    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libDcfHalBleProto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalBleProto.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libDcfHalFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalFramework.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libDcfHalLogger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalLogger.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libDcfHalQtiMutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalQtiMutex.so \
@@ -827,7 +841,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libappclassifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappclassifier.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libar-gpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gpr.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libaualgo_ainr_component.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaualgo_ainr_component.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libaualgo_ainr_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaualgo_ainr_wrapper.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libaualgo_arp_component.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaualgo_arp_component.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libaualgo_arp_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaualgo_arp_wrapper.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libaualgo_azp_component.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaualgo_azp_component.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libaualgo_azp_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaualgo_azp_wrapper.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libaualgo_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaualgo_foundation.so \
@@ -893,11 +909,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libeva_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeva_util.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libext_tflite_c.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libext_tflite_c.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libfeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeutils.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libflatbuffers-cpp_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflatbuffers-cpp_vendor.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libfmpal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfmpal.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libgame_enhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgame_enhance.so \
-    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
-    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libgamepoweroptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgamepoweroptfeature.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofencing.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
@@ -937,9 +953,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloadalgo_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadalgo_stub.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloc_api_wds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_wds.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloc_base_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_base_util.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_core.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloc_eng_hub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_eng_hub.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloc_mq_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_mq_client.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloc_qwes_iface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_qwes_iface.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloc_ril_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_ril_client.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libloc_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_util.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
@@ -952,6 +971,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/liblocdiagiface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocdiagiface.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/liblog_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblog_vendor.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/liblowi_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_common.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/liblx-ar_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-ar_util.so \
@@ -1075,6 +1095,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqrtrclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtrclient.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqsap_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsap_sdk.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqsh_ble_pb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsh_ble_pb.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd-client.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd.so \
@@ -1090,13 +1111,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqvr_cam_cdsp_driver_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_cam_cdsp_driver_stub.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqvr_cdsp_driver_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_cdsp_driver_stub.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqvr_eyetracking_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_eyetracking_plugin.so \
-    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqvr_hostcontroller_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_hostcontroller_plugin.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrcamera_client.qti.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqvrservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_client.qti.so \
-    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqvrservice_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_ov7251_hvx_tuning.so \
-    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqvrservice_ov9282_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_ov9282_hvx_tuning.so \
-    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/librcmask.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcmask.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libril-db.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-db.so \
@@ -1160,6 +1177,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libtflite_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_vendor.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libtlpd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlpd.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libtlpd_configmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlpd_configmgr.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libtlpd_crypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlpd_crypto.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libtlpd_internal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlpd_internal.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/libtlpd_logger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlpd_logger.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libtracker_6dof_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtracker_6dof_impl.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideooptfeature.so \
@@ -1273,7 +1295,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.1.so \
-    vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.gnss-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-V2-ndk.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.gnss-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-V4-ndk.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.gnss-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-service.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so \
@@ -1345,7 +1367,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.lpa@1.3.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qcrilhook-V1-ndk.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio-V8-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio-V8-ndk.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio-V9-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio-V9-ndk.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so \
@@ -1354,7 +1376,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so \
-    vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradioconfig-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradioconfig-V2-ndk.so \
+    vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradioconfig-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradioconfig-V3-ndk.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.0.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/motorola/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.2.so \
@@ -1459,7 +1481,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.0-java \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
+    android.hardware.drm-service \
     android.hardware.gnss-aidl-service-qti \
+    android.hardware.keymaster@4.0-service-strongbox-qti \
     android.hardware.radio.config \
     android.hardware.radio.data \
     android.hardware.radio.messaging \
@@ -1473,6 +1497,7 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor_audio \
     dataconnection-saidl \
     deviceinfo-saidl \
+    imsdcservice-saidl \
     manifest \
     manifest_android.hardware.drm-service.widevine \
     manifest_identity_credential \

@@ -13,6 +13,7 @@
 <!--
         <interface>
             <name>IComponentStore</name>
+	    #<fqname>@1.0::IComponentStore/default9</fqname>  // for dolby audio codecs
 	    #<fqname>@1.0::IComponentStore/default2</fqname>  // for qcom audio hw codecs,if enable it,add here
 	    #<fqname>@1.0::IComponentStore/default3</fqname>  // for dolby vision codecs
 	...
@@ -28,6 +29,7 @@
             <instance>default</instance>
             <instance>software</instance>
         </interface>
+        <fqname>@1.0::IComponentStore/default9</fqname>
         <fqname>@1.0::IComponentStore/default3</fqname>
     </hal>
 </manifest>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <device_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <format_version major="3" minor="5" maintenance="0"/>
-  <tool_version major="3" minor="10" maintenance="1"/>
+  <format_version major="3" minor="6" maintenance="0"/>
+  <tool_version major="3" minor="11" maintenance="0"/>
   <preset id="2" name="balanced" type="ieq">
     <data>
       <ieq-bands>
@@ -1415,10 +1415,10 @@
         <band_optimizer frequency="1031" gain_left="-95" gain_right="-95"/>
         <band_optimizer frequency="1313" gain_left="-44" gain_right="-44"/>
         <band_optimizer frequency="1688" gain_left="-21" gain_right="-21"/>
-        <band_optimizer frequency="2250" gain_left="-2" gain_right="-2"/>
-        <band_optimizer frequency="3000" gain_left="-20" gain_right="-17"/>
-        <band_optimizer frequency="3750" gain_left="-113" gain_right="-61"/>
-        <band_optimizer frequency="4688" gain_left="-85" gain_right="-105"/>
+        <band_optimizer frequency="2250" gain_left="-24" gain_right="-24"/>
+        <band_optimizer frequency="3000" gain_left="-56" gain_right="-54"/>
+        <band_optimizer frequency="3750" gain_left="-128" gain_right="-76"/>
+        <band_optimizer frequency="4688" gain_left="-87" gain_right="-107"/>
         <band_optimizer frequency="5813" gain_left="15" gain_right="12"/>
         <band_optimizer frequency="7125" gain_left="46" gain_right="46"/>
         <band_optimizer frequency="9000" gain_left="63" gain_right="63"/>
@@ -1464,6 +1464,8 @@
         <mix_matrix>
           <element value="0,2,16384,16384"/>
           <element value="1,4,16384,0,0,16384"/>
+          <element value="3,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384"/>
+          <element value="5,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
           <element value="10,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384"/>
           <element value="11,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
           <element value="6,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
@@ -1479,13 +1481,13 @@
       <virtual-bass-mix-freqs frequency_low="202" frequency_high="319"/>
       <virtual-bass-src-freqs frequency_low="30" frequency_high="270"/>
       <virtual-bass-subgains harmonic_2="8" harmonic_3="96" harmonic_4="20"/>
-      <virtual-bass-harmgains value="-59,48,48,48"/>
-      <virtual-bass-hybgains value="33,-91,-320,-320,-320,-320"/>
+      <virtual-bass-harmgains value="-1715,57,48,48"/>
+      <virtual-bass-hybgains value="33,-320,-120,-320,-320,-320"/>
       <virtual-bass-rolloff-gain value="0"/>
-      <virtual-bass-blend-linear-gain value="-20"/>
+      <virtual-bass-blend-linear-gain value="-23"/>
       <virtual-bass-mix-frequency value="100,1500"/>
-      <virtual-bass-compressor-tuning value="1,80,-204,54,32,50,50"/>
-      <bass-mbdrc-tuning value="1,-1600,0,-1120,-400,0,-64,5,10,0,1,-1600,0,-1120,-224,-16,-48,57,64,48,1,-1600,0,-1120,-128,-16,-64,50,50,32,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,0,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0"/>
+      <virtual-bass-compressor-tuning value="1,50,-91,54,32,50,50"/>
+      <bass-mbdrc-tuning value="1,-1600,0,-1120,-400,0,-64,5,10,0,1,-1600,0,-1120,-336,-16,-48,57,64,48,1,-1600,0,-1120,-400,-32,-32,50,50,48,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,0,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0"/>
       <virtualizer-front-speaker-angle value="10"/>
       <virtualizer-height-speaker-angle value="10"/>
       <virtualizer-surround-speaker-angle value="10"/>
@@ -1515,10 +1517,10 @@
         <band_optimizer frequency="1031" gain_left="-95" gain_right="-95"/>
         <band_optimizer frequency="1313" gain_left="-44" gain_right="-44"/>
         <band_optimizer frequency="1688" gain_left="-21" gain_right="-21"/>
-        <band_optimizer frequency="2250" gain_left="-2" gain_right="-2"/>
-        <band_optimizer frequency="3000" gain_left="-17" gain_right="-20"/>
-        <band_optimizer frequency="3750" gain_left="-61" gain_right="-113"/>
-        <band_optimizer frequency="4688" gain_left="-105" gain_right="-85"/>
+        <band_optimizer frequency="2250" gain_left="-24" gain_right="-24"/>
+        <band_optimizer frequency="3000" gain_left="-54" gain_right="-56"/>
+        <band_optimizer frequency="3750" gain_left="-76" gain_right="-128"/>
+        <band_optimizer frequency="4688" gain_left="-107" gain_right="-87"/>
         <band_optimizer frequency="5813" gain_left="12" gain_right="15"/>
         <band_optimizer frequency="7125" gain_left="46" gain_right="46"/>
         <band_optimizer frequency="9000" gain_left="63" gain_right="63"/>
@@ -1530,7 +1532,7 @@
         <band_regulator frequency="47" threshold_low="-1152" threshold_high="-960" isolated_band="true"/>
         <band_regulator frequency="141" threshold_low="-192" threshold_high="0" isolated_band="true"/>
         <band_regulator frequency="234" threshold_low="-192" threshold_high="0" isolated_band="true"/>
-        <band_regulator frequency="328" threshold_low="-192" threshold_high="0" isolated_band="true"/>
+        <band_regulator frequency="328" threshold_low="-336" threshold_high="-144" isolated_band="true"/>
         <band_regulator frequency="469" threshold_low="-419" threshold_high="-227" isolated_band="true"/>
         <band_regulator frequency="656" threshold_low="-384" threshold_high="-192" isolated_band="true"/>
         <band_regulator frequency="844" threshold_low="-354" threshold_high="-162" isolated_band="true"/>
@@ -1564,6 +1566,8 @@
         <mix_matrix>
           <element value="0,2,16384,16384"/>
           <element value="1,4,16384,0,0,16384"/>
+          <element value="3,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384"/>
+          <element value="5,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
           <element value="10,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384"/>
           <element value="11,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
           <element value="6,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
@@ -1579,13 +1583,13 @@
       <virtual-bass-mix-freqs frequency_low="202" frequency_high="319"/>
       <virtual-bass-src-freqs frequency_low="30" frequency_high="270"/>
       <virtual-bass-subgains harmonic_2="8" harmonic_3="96" harmonic_4="20"/>
-      <virtual-bass-harmgains value="-59,48,48,48"/>
-      <virtual-bass-hybgains value="33,-91,-320,-320,-320,-320"/>
+      <virtual-bass-harmgains value="-1715,57,48,48"/>
+      <virtual-bass-hybgains value="33,-320,-120,-320,-320,-320"/>
       <virtual-bass-rolloff-gain value="0"/>
-      <virtual-bass-blend-linear-gain value="-20"/>
+      <virtual-bass-blend-linear-gain value="-23"/>
       <virtual-bass-mix-frequency value="100,1500"/>
-      <virtual-bass-compressor-tuning value="1,80,-204,54,32,50,50"/>
-      <bass-mbdrc-tuning value="1,-1600,0,-1120,-400,0,-64,5,10,0,1,-1600,0,-1120,-224,-16,-48,57,64,48,1,-1600,0,-1120,-128,-16,-64,50,50,32,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,0,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0"/>
+      <virtual-bass-compressor-tuning value="1,50,-91,54,32,50,50"/>
+      <bass-mbdrc-tuning value="1,-1600,0,-1120,-400,0,-64,5,10,0,1,-1600,0,-1120,-336,-16,-48,57,64,48,1,-1600,0,-1120,-400,-32,-32,50,50,48,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,0,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0"/>
       <virtualizer-front-speaker-angle value="10"/>
       <virtualizer-height-speaker-angle value="10"/>
       <virtualizer-surround-speaker-angle value="10"/>
@@ -1663,6 +1667,8 @@
         <mix_matrix>
           <element value="0,2,16384,16384"/>
           <element value="1,4,16384,0,0,16384"/>
+          <element value="3,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384"/>
+          <element value="5,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
           <element value="10,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384"/>
           <element value="11,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
           <element value="6,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
@@ -1762,6 +1768,8 @@
         <mix_matrix>
           <element value="0,2,16384,16384"/>
           <element value="1,4,16384,0,0,16384"/>
+          <element value="3,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384"/>
+          <element value="5,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
           <element value="10,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384"/>
           <element value="11,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
           <element value="6,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
@@ -1861,6 +1869,8 @@
         <mix_matrix>
           <element value="0,2,16384,16384"/>
           <element value="1,4,16384,0,0,16384"/>
+          <element value="3,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384"/>
+          <element value="5,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
           <element value="10,12,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384"/>
           <element value="11,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
           <element value="6,16,16384,0,0,16384,11583,11583,8192,8192,16384,0,0,16384,16384,0,0,16384"/>
@@ -2087,7 +2097,7 @@
       <bass-mbdrc-enable value="false"/>
     </data>
   </tuning>
-  <authorized_technologies sku_name="DAX3 Android" device="dax3_android" bundle="DAP MOBILE v1.9" format="2">
+  <authorized_technologies sku_name="DAX3 Android" device="dax3_android" bundle="DAP MOBILE v2.0" format="2">
     <global_setting virtual_bass_process="1"/>
     <global_setting atmos_game_system_gain="0"/>
   </authorized_technologies>

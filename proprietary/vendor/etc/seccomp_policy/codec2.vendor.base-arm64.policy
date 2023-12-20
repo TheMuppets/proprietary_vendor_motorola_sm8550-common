@@ -1,5 +1,5 @@
 ###################################################################################################
-# Copyright (c) 2020-2022 Qualcomm Technologies, Inc.
+# Copyright (c) 2020-2023 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 ###################################################################################################
@@ -86,3 +86,5 @@ getegid: 1
 getgroups: 1
 sched_setaffinity: 1
 sched_getaffinity: 1
+sched_get_priority_max: 1
+sched_setscheduler: 1
