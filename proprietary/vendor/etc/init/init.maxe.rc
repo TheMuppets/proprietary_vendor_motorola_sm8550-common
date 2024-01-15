@@ -1,0 +1,3 @@
+
+on property:vendor.motosxf.mode=*
+    setprop vendor.thermal.mode ${vendor.motosxf.mode}
